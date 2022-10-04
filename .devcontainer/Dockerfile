@@ -22,7 +22,7 @@ RUN su vscode -c "${VCPKG_ROOT}/vcpkg install bzip2"
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     && apt-get -y install --no-install-recommends ragel bzip2 libsqlite3-dev libpcap-dev libboost-all-dev --fix-missing
 # libpcre3 libpcre3-dev 
-RUN cd /workspaces/hyperscan
+RUN cd /workspaces/hyperscan \
     && wget https://sourceforge.net/projects/pcre/files/pcre/8.45/pcre-8.45.tar.bz2 \
-    && tar xvfj pcre-8.45.tar.bz2 && mv pcre-8.45 pcre
+    && tar xvfj pcre-8.45.tar.bz2 && mv pcre-8.45 pcre \
     && rm pcre-8.45.tar.bz2
