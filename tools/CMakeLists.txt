@@ -13,7 +13,7 @@ if (WIN32)
     add_subdirectory(hscheck)
     add_subdirectory(hsbench)
     add_subdirectory(hsdump)
-    add_subdirectory(hscollider)
+    # add_subdirectory(hscollider)
 else()
     # add any subdir with a cmake file
     file(GLOB dirents RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} *)

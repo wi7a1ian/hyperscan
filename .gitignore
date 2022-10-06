@@ -103,3 +103,6 @@ pcre/pcre_stringpiece.h
 pcre/pcrecpparg.h
 pcre/stamp-h1
 pcre/test-driver
+/out/install/x64-Debug
+/.vs
+/.vscode
